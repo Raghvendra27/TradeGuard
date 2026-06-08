@@ -48,7 +48,7 @@ if page == "Dashboard":
     col1, col2, col3 = st.columns(3)
 
     def fetch_live_data():
-        headers = {"X-API-KEY": "DFizFdNE0lNhaq2T2CGimNjPSyr6JEHS"}  # Replace with your actual API key
+        headers = {"X-API-KEY": xxx}  # Replace with your actual API key
         try:
             fx = requests.get("https://api.apilayer.com/exchangerates_data/latest?base=USD&symbols=INR", headers=headers).json()
             usd_inr = fx["rates"]["INR"]
